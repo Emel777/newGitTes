@@ -2,18 +2,19 @@
 #define REKURZIJA_H
 #include<iostream>
 #include<stdlib.h>
+#include<cmath> // Ukljucili smo ovu biblioteku
 using namespace std;
 
 
 class Rekurzija {
     private:
-        int x;
+        int u;  //Ovdje sam mijenjao
         int y;
         int z;
 
 
     public:
-        Rekurzija () {x=0;};
+        Rekurzija () {u=0;};   // Ovdje sam mijenjao
         int get ();
         void set (int a, int b, int c);
 
@@ -21,11 +22,11 @@ class Rekurzija {
 };
 
 int Rekurzija::get () {
-return (x);
+return (u);   // Ovjde sam mijenjao
 }
 
 void Rekurzija::set (int a, int b, int c) {
-x=a;
+u=a;         // Ovdje sam mijenjao
 y=b;
 z=c;
 }
